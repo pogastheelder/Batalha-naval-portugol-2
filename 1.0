@@ -1,0 +1,56 @@
+algoritmo "batalha naval"
+
+var
+  mapa: matriz[0..5, 0..5] caracter
+  tentativas: inteiro
+  ataque: inteiro
+  ataquedois: inteiro
+  
+inicio
+
+  mapa[0,0] <- "N"
+  mapa[0,1] <- "N"
+  mapa[0,2] <- "V"
+  mapa[0,3] <- "N"
+  mapa[0,4] <- "V"
+  mapa[0,5] <- "C"
+  mapa[1,0] <- "V"
+  mapa[1,1] <- "V"
+  mapa[1,2] <- "V"
+  mapa[1,3] <- "N"
+  mapa[1,4] <- "B"
+  mapa[1,5] <- "C"
+  mapa[2,0] <- "B"
+  mapa[2,1] <- "V"
+  mapa[2,2] <- "V"
+  mapa[2,3] <- "V"
+  mapa[2,4] <- "V"
+  mapa[2,5] <- "C"
+  mapa[3,0] <- "V"
+  mapa[3,1] <- "D"
+  mapa[3,2] <- "D"
+  mapa[3,3] <- "D"
+  mapa[3,4] <- "D"
+  mapa[3,5] <- "V"
+  mapa[4,0] <- "C"
+  mapa[4,1] <- "C"
+  mapa[4,2] <- "C"
+  mapa[4,3] <- "V"
+  mapa[4,4] <- "V"
+  mapa[4,5] <- "V"
+  mapa[5,0] <- "V"
+  mapa[5,1] <- "V"
+  mapa[5,2] <- "V"
+  mapa[5,3] <- "V"
+  mapa[5,4] <- "V"
+  mapa[5,5] <- "V"
+
+  escreval("onde vai ser seu ataque?:" )
+  leia(ataque)
+  leia(ataquedois)
+ 
+  escreval(mapa[ataque,ataquedois])
+
+
+
+fimalgoritmo
